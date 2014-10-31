@@ -17,10 +17,6 @@ void main() {
             expect(od.compute(1, 2).length, equals(1));
         });
 
-        test('returns list with 1 element if a == b - 1 and a is even (so b is odd)', () {
-            expect(od.compute(2, 3).length, equals(1));
-        });
-
     });
 }
 
