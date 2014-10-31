@@ -1,9 +1,9 @@
 import "package:unittest/unittest.dart";
 
 void main() {
-    OddDoubler od;
 
     group('OddDoubler', () {
+        OddDoubler od;
         
         setUp(() {
             od = new OddDoubler();
