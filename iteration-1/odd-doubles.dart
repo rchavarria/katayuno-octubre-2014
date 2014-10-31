@@ -21,6 +21,10 @@ void main() {
             expect(od.compute(3, 4)[0], equals(6));
         });
 
+        test('returns list which only element is the double of b when a == b - 1 and a is even', () {
+            expect(od.compute(6, 7)[0], equals(14));
+        });
+
     });
 }
 
