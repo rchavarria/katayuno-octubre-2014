@@ -22,7 +22,13 @@ void main() {
 
 class OddDoubler {
     List<int> compute(int a, int b) {
-        return new List<int>();
+        List<int> list = new List<int>();
+
+        if (a < b) {
+            list.add(0);
+        }
+
+        return list;
     }
 }
 
