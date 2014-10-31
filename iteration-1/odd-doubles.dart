@@ -17,6 +17,10 @@ void main() {
             expect(od.compute(1, 2).length, equals(1));
         });
 
+        test('returns list which only element is the double of a when a == b - 1 and a is odd', () {
+            expect(od.compute(3, 4)[0], equals(6));
+        });
+
     });
 }
 
