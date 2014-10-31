@@ -29,7 +29,7 @@ class OddDoubler {
         List<int> list = new List<int>();
 
         if (a < b) {
-            list.add(0);
+            list.add(a * 2);
         }
 
         return list;
