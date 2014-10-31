@@ -1,7 +1,13 @@
 import "package:unittest/unittest.dart";
 
 void main() {
+    OddDoubler od;
+
     group('OddDoubler', () {
+        
+        setUp(() {
+            od = new OddDoubler();
+        });
         
         test('returns empty list when a == b and both are even', () {
             OddDoubler od = new OddDoubler();
