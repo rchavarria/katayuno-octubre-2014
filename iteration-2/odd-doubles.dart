@@ -5,6 +5,7 @@ class OddDoubler {
     boolean isOdd(int n) => n % 2 != 0;
 
     List<int> getNumbers(int a, int b) {
+        // TODO try with new List<int>.generate(length, (i) => generate 1, 2, 3, 4, ....
         List<int> list = new List<int>();
 
         for (int i = a; i <= b; i++) {
@@ -13,6 +14,12 @@ class OddDoubler {
 
         return list;
     }
+
+    List<int> filterOdds(List<int> numbers) {
+        numbers.removeWhere((n) => !isOdd(n));
+        return numbers;
+    }
+    
 }
 
 void main() {
