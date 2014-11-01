@@ -57,8 +57,8 @@ void main() {
         });
 
         test('compute() resolves the kata', () {
-            expect(od.compute(1, 1), equals([2]));
             expect(od.compute(2, 2), equals([]));
+            expect(od.compute(1, 1), equals([2]));
             expect(od.compute(1, 4), equals([2, 6]));
             expect(od.compute(2, 5), equals([6, 10]));
             expect(od.compute(6, 16), equals([14, 18, 22, 26, 30]));
