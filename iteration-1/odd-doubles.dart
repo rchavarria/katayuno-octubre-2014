@@ -1,5 +1,24 @@
 import "package:unittest/unittest.dart";
 
+class OddDoubler {
+
+    List<int> compute(int a, int b) {
+        List<int> list = new List<int>();
+
+        while (a <= b) {
+            if (isOdd(a)) {
+                list.add(a * 2);
+            }
+            a++;
+        }
+
+        return list;
+    }
+
+    boolean isOdd(n) => n % 2 != 0;
+
+}
+
 void main() {
 
     group('OddDoubler', () {
@@ -38,24 +57,5 @@ void main() {
         });
 
     });
-}
-
-class OddDoubler {
-
-    List<int> compute(int a, int b) {
-        List<int> list = new List<int>();
-
-        while (a <= b) {
-            if (isOdd(a)) {
-                list.add(a * 2);
-            }
-            a++;
-        }
-
-        return list;
-    }
-
-    boolean isOdd(n) => n % 2 != 0;
-
 }
 
