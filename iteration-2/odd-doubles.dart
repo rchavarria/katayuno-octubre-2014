@@ -8,8 +8,10 @@ void main() {
         setUp(() {
             od = new OddDoubler();
         });
-        
-        test('', () {
+
+        test('isOdd returns true if the number is odd', () {
+            expect(od.isOdd(1), equals(true));
+            expect(od.isOdd(2), equals(false));
         });
 
     });
