@@ -14,6 +14,7 @@ class OddDoubler {
         return numbers;
     }
     
+    List<int> doubleNumbers(List<int> numbers) => numbers.map((n) => n * 2);
 }
 
 void main() {
@@ -44,9 +45,9 @@ void main() {
         });
 
         test('doubleNumbers() returns a list where each element is the double of each element of the list passed as param', () {
-            expect(od.doubleNumbers([], equals([])));
-            expect(od.doubleNumbers([1, 2, 3], equals([2, 4, 6])));
-            expect(od.doubleNumbers([7, 3, 10, 234], equals([14, 6, 20, 468])));
+            expect(od.doubleNumbers([]), equals([]));
+            expect(od.doubleNumbers([1, 2, 3]), equals([2, 4, 6]));
+            expect(od.doubleNumbers([7, 3, 10, 234]), equals([14, 6, 20, 468]));
         });
 
     });
