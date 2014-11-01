@@ -20,6 +20,13 @@ void main() {
             expect(od.isOdd(2), equals(false));
         });
 
+        test('getNumbers() returns a list with as many numbers between a and b, both inclusive', () {
+            expect(od.getNumbers(1, 1), equals([1]));
+            expect(od.getNumbers(1, 2), equals([1, 2]));
+            expect(od.getNumbers(1, 5), equals([1, 2, 3, 4, 5]));
+            expect(od.getNumbers(3, 10), equals([3, 4, 5, 6, 7, 8, 9, 10]));
+        });
+
     });
 }
 
