@@ -25,6 +25,12 @@ void main() {
             expect(od.compute(6, 7)[0], equals(14));
         });
 
+        test('returns list with as many elements as odd numbers between a and b', () {
+            expect(od.compute(1, 3).length, equals(2));
+            expect(od.compute(5, 10).length, equals(3));
+            expect(od.compute(4, 13).length, equals(5));
+        });
+
     });
 }
 
