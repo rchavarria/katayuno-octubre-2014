@@ -1,5 +1,11 @@
 import "package:unittest/unittest.dart";
 
+class OddDoubler {
+
+    boolean isOdd(int n) => n % 2 != 0;
+
+}
+
 void main() {
 
     group('OddDoubler', () {
