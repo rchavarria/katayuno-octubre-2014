@@ -15,6 +15,7 @@ class OddDoubler {
     }
     
     List<int> doubleNumbers(List<int> numbers) => numbers.map((n) => n * 2);
+
 }
 
 void main() {
@@ -48,6 +49,14 @@ void main() {
             expect(od.doubleNumbers([]), equals([]));
             expect(od.doubleNumbers([1, 2, 3]), equals([2, 4, 6]));
             expect(od.doubleNumbers([7, 3, 10, 234]), equals([14, 6, 20, 468]));
+        });
+
+        test('compute() resolves the kata', () {
+            expect(od.compute(1, 1), equals([2]));
+            expect(od.compute(2, 2), equals([]));
+            expect(od.compute(1, 4), equals([2, 6]));
+            expect(od.compute(2, 5), equals([6, 10]));
+            expect(od.compute(6, 16), equals([14, 18, 22, 26, 30]));
         });
 
     });
