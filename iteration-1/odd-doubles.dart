@@ -31,6 +31,12 @@ void main() {
             expect(od.compute(4, 13).length, equals(5));
         });
 
+        test('returns list with the doubles of all odd numbers between a and b, inclusive', () {
+            expect(od.compute(1, 3), equals([2, 6]));
+            expect(od.compute(5, 10), equals([10, 14, 18]));
+            expect(od.compute(4, 13), equals([10, 14, 18, 22, 26]));
+        });
+
     });
 }
 
