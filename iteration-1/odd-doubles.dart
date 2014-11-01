@@ -39,12 +39,11 @@ class OddDoubler {
     List<int> compute(int a, int b) {
         List<int> list = new List<int>();
 
-	    if (isOdd(a)) {
-            list.add(a * 2);
-        }
-
-        if (isOdd(b)) {
-            list.add(b * 2);
+        while (a <= b) {
+            if (isOdd(a)) {
+                list.add(a * 2);
+            }
+            a++;
         }
 
         return list;
