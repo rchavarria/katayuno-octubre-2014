@@ -18,9 +18,7 @@ class OddDoubler {
 
     // This method should be the only public method
     // It resolves the KATA
-    List<int> compute(int a, int b) {
-        return doubleNumbers(filterOdds(getNumbers(a, b)));
-    }
+    List<int> compute(int a, int b) => doubleNumbers(filterOdds(getNumbers(a, b)));
 }
 
 void main() {
