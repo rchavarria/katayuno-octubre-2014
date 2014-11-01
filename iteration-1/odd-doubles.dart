@@ -29,14 +29,22 @@ void main() {
 }
 
 class OddDoubler {
+
     List<int> compute(int a, int b) {
         List<int> list = new List<int>();
 
-        if (a < b) {
+	    if (isOdd(a)) {
             list.add(a * 2);
+        }
+
+        if (isOdd(b)) {
+            list.add(b * 2);
         }
 
         return list;
     }
+
+    boolean isOdd(n) => n % 2 != 0;
+
 }
 
