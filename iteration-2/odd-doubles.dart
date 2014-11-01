@@ -43,6 +43,12 @@ void main() {
             expect(od.filterOdds([3, 8, 5, 3, 11, 10, 20, 14, 12]), equals([3, 5, 3, 11]));
         });
 
+        test('doubleNumbers() returns a list where each element is the double of each element of the list passed as param', () {
+            expect(od.doubleNumbers([], equals([])));
+            expect(od.doubleNumbers([1, 2, 3], equals([2, 4, 6])));
+            expect(od.doubleNumbers([7, 3, 10, 234], equals([14, 6, 20, 468])));
+        });
+
     });
 }
 
