@@ -37,6 +37,6 @@ es que los métodos que resuelven los pasos intermedios quedan como métodos
 públicos, cuando estarían mejor encapsulados como privados. Pero es un
 mal menor. Al menos he aprendido algo.
 
-[iteración 1]: ./iteracion-1
-[iteración 2]: ./iteracion-2
+[iteración 1]: ./iteration-1
+[iteración 2]: ./iteration-2
 
