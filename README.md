@@ -1,7 +1,7 @@
 katayuno-octubre-2014
 =====================
 
-Código de dos soluciones al problema resuelto en el Katayuno de octubre de
+Código de dos soluciones al problema resuelto en el [Katayuno de octubre] de
 2014 propuesto por [Aprendiendo TDD](http://aprendiendotdd.com) celebrado
 en [MateriaGris Coworking](http://www.materiagriscoworking.com).
 
@@ -37,6 +37,7 @@ es que los métodos que resuelven los pasos intermedios quedan como métodos
 públicos, cuando estarían mejor encapsulados como privados. Pero es un
 mal menor. Al menos he aprendido algo.
 
+[Katayuno de octubre]: http://aprendiendotdd.com/2014/10/katayuno-de-octubre
 [iteración 1]: ./iteration-1
 [iteración 2]: ./iteration-2
 
